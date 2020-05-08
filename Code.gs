@@ -83,14 +83,3 @@ function reformat(sth) {
   return temp[0];
 }
 
-function testing(){
-  trend(fetchCovidData("united-states","Massachusetts"));
-}
-
-function trend(chart){
-  var result = [];
-  for (i in chart[0] && i>1){
-    result.push(chart[0][i]);
-  }
-  Logger.log(result);
-}
